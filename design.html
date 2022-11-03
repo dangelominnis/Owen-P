@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="Owen Paznokas, a designer and photographer in Bellingham, Washington. Offers designs, photography, graphic designer, film editor, layout and editing." />
+    <meta name="keywords" content="Owen Paznokas, Owen, Paznokas, Designer, Photographer">
+    <meta name="author" content="Owen Paznokas">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+    <title>Owen P. | Designer</title>
+    <!-- Google Fonts -->
+    <!-- Josefin Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header1" id="header1">
+        <div class="container">
+            <!-- <div class="header-box">
+                <div class="header-text">
+                    <h1>Hi! I'm Owen, I like making!</h1>
+                    <h4>Like posters, like flyers, like anything. I’m a graphic designer and photographer with an imagination, bringing stories and events to wild new places.</h4>
+                </div>
+                <div class="header-image">
+                    <img src="img/HeroImage_Home Page.jpg" alt="Fiverr Reviews logogenius5">
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <a href="index.html"><img class="bar__logo" src="img/LOGO-01.png" alt="logo image"></a>
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">menu</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="design.html">Design</a>
+                <a class="nav__link" href="photography.html">Photography</a>
+                <a class="nav__link" href="process.html">Process</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a class="btn-transparent" href="#footer">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+            }, {
+                threshold: 0.1
+            });
+            
+            observer.observe(document.querySelector(".header1"));
+        });
+        </script>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <div class="intro-box">
+            <div class="intro-image">
+                <img src="img/Design_FoodPoster_2nd IMage on design page.jpg" alt="">
+            </div>
+            <div class="intro-text">
+                <h2>For me, design is about elevating visions, with colorful effectiveness.</h2>
+                <p>My personal medium of choice is collage. I created most of my posters with a mixture of my own assets and royalty free images.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photos Section -->
+<section class="photos">
+    <div class="container">
+        <h2>Check out some designs!</h2>
+        <div class="photos-box">
+            <div class="photos-item">
+                <img src="img/Design_Gallery_Monster Bash.jpg" alt="">
+            </div>
+            <div class="photos-item">
+                <img src="img/Design_Gallery_Theforager.jpg" alt="">
+            </div>
+            <div class="photos-item">
+                <img src="img/Design_Gallery_3rd on top.jpg" alt="">
+            </div>
+            <div class="photos-item">
+                <img src="img/Design_Gallery_TopRight.jpg" alt="">
+            </div>
+            <div class="photos-item">
+                <img src="img/Design_Gallery_The Ladder Poster.jpg" alt="">
+            </div>
+            <div class="photos-item">
+                <img src="img/Design_Gallery_The Cyclist.jpg" alt="">
+            </div>
+            <div class="photos-item">
+                <img src="img/Design_Gallery_3rd bottom.jpg" alt="">
+            </div>
+            <div class="photos-item">
+                <img src="img/Design_Gallery_PresentPoster.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Group Section -->
+<section class="group">
+    <div class="container">
+        <h2>Recent Collections</h2>
+        <div class="group-box">
+            <div class="group-main">
+                <div class="group-main-image">
+                    <img src="img/Design_Albums_MainIMage.jpg" alt="">
+                </div>
+                <div class="group-main-image">
+                    <img src="img/Design_Albums_Rav4.jpg" alt="">
+                </div>
+                <div class="group-main-image">
+                    <img src="img/Design_Album_TopRight.jpg" alt="">
+                </div>
+                <div class="group-main-image">
+                    <img src="img/Design_Albums_Bottom Middle.jpg" alt="">
+                </div>
+            </div>
+            <div class="group-content">
+                <div class="group-images">
+                    <div class="group-item">
+                        <img src="img/Design_Albums_TopMiddle.jpg" alt="">
+                    </div>
+                    <div class="group-item">
+                        <img src="img/Design_Albums_BottomRIght.jpg" alt="">
+                    </div>
+                </div>
+                <div class="group-text">
+                    <h3>I make a playlist cover every month...</h3>
+                    <p>I’m constantly listening to music. And I’m always designing, so these experimental playlist covers merge the twot—every month. Each presents a unique open-ended Design problem!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <h3>Inquiries</h3>
+                <div class="contact-form">
+                    <form name="contact" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="contat">
+                        <div class="contact-item">
+                            <input type="name" name="Name" id="" class="input" placeholder="Name" required>
+                        </div>
+                        <div class="contact-item">
+                            <input type="email" name="Email Address" id="" class="input" placeholder="Email Address" required>
+                        </div>
+                        <div class="contact-item">
+                            <input type="tel" name="Phone Number" id="" class="input" placeholder="Phone Number" required>
+                        </div>
+                        <div class="contact-item">
+                            <input type="text" name="Message" id="" style="height: 6rem;" class="input" placeholder="Message" required>
+                        </div>
+                        <div class="contact-item">
+                            <input type="submit" value="Submit" class="btn-submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-box-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="design.html"><li>Design</li></a>
+                    <a href="photography.html"><li>Photography</li></a>
+                    <a href="process.html"><li>Process</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="#footer"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3 style="margin-bottom: 1rem;">Social Media</h3>
+                <a href="https://www.instagram.com/owenpaznokas.photography/?hl=en" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/Logogeniuses/" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://www.facebook.com/owen.paznokas.77/" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3>Contact Info</h3>
+                <a href="tel:253-329-6413"><li>(253) 329 - 6413</li></a>
+                <a href="mailto:owenpaznokas1@gmail.com"><li>owenpaznokas1@gmail.com</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Bar -->
+<section class="footer-bar">
+    <div class="container">
+        <h5>Copyright © 2022 Owen Paznokas - All Rights Reserved.</h5>
+    </div>
+</section>
+
+</body>
+</html>
