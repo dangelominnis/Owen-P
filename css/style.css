@@ -259,7 +259,7 @@ body {
     height: auto;
     /* height: calc(100vh - var(--bar-height)); */
     padding: 24px;
-    background: var(--color-dark-grey);
+    background: var(--color-primary);
     box-sizing: border-box;
 }
 
@@ -896,11 +896,6 @@ body {
     line-height: 1.6;
 }
 
-
-
-
-
-
 /* About Section */
 .about {
     padding: 12rem 8rem;
@@ -1321,13 +1316,30 @@ body {
 /* Medium devices (landscape tablets, ipad air, 820px and down) */
 @media only screen and (max-width: 820px) {
     
+    /* Header Hero Images */
+    .header1 {
+        height: 40vh;
+    }
+
+    .header2 {
+        height: 40vh;
+    }
+
+    .header3 {
+        height: 40vh;
+    }
+
     /* Header Section */
     .header {
-        height: 50vh;
+        padding: 18rem 8rem 4rem 8rem;
     }
 
     .header-box {
-        margin: 0 2rem;
+    }
+
+    .header-image img {
+        width: 350px;
+        padding-left: 4rem;
     }
 
     .header-button {
@@ -1335,32 +1347,20 @@ body {
     }
 
     .header-text h1 {
-        text-align: center;
-        margin-bottom: 3rem;
+        font-size: 4.5rem;
     }
-
-    .nav {
-        background: var(--color-light-grey);
-    }
-
+    
     .bar__nav-toggle i {
         color: var(--color-black);
     }
 
     .nav__link {
         color: var(--color-black);
-        /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+        border-bottom: 1px dotted var(--color-black);
     }
 
-    .nav__link:nth-child(6) {
+    .nav__link:nth-child(5) {
         border-bottom: none;
-    }
-    
-    .nav .btn-purple {
-        margin: auto;
-        text-align: center;
-        margin-top: 2rem;
-        padding: 12.5px 20px;
     }
 
     .nav .btn-transparent {
@@ -1370,118 +1370,191 @@ body {
         padding: 12.5px 20px;
     }
 
-    /* Logos Section */
-    .logos {
-        height: 42vh;
+    /* Showcase Section */
+    .showcase {
+        padding: 8rem 4rem;
     }
 
-    /* Process Section */
-    .process-box {
-        flex-direction: column;
+    .showcase-card {
+        width: 100%;
     }
 
-    .process-card {
-        width: 50rem;
-        margin-bottom: 6rem;
-        justify-content: center;
-        align-items: center;
+    .showcase-text {
+        padding: 4rem;
+    }
+
+    .showcase-text p {
         text-align: center;
     }
 
-    .process-card:nth-child(3) {
-        margin-bottom: 0rem;
+    .showcase-button {
+        margin-bottom: 1rem;
     }
 
-    /* Certifications Section */
-    .certifications-item img {
-        width: 150px;
-        height: auto;
-    }
-
-    /* Logos 2 Section */
-    .logos-2 {
-        height: 42vh;
-    }
-
-    /* Customs Section */
-    .custom-card:nth-child(1) {
-        margin-bottom: 6rem;
-    }
-
-    .custom-card:nth-child(2) {
-        margin-bottom: 6rem;
-    }
-
-    /* Pricing Section */
-
-    .pricing-card {
-        margin-bottom: 6rem;
-    }
-
-    .pricing-card:nth-child(5) {
-        margin-bottom: 0rem;
-    }
-
-    .pricing-card:nth-child(4) {
-        margin-bottom: 0rem;
-    }
-
-    /* Fiverr Section */
-    .fiverr-item:nth-child(2) {
-        margin: 0rem 4rem 0rem 4rem;
-    }
-
-    /* Branding Section */
-    .branding {
+    /* Intro Section */
+    .intro {
         padding: 12rem 4rem 0rem 4rem;
     }
 
-    .branding-item:nth-child(7) {
-        margin-bottom: 4rem;
-    }
-
-    .branding-item:nth-child(8) {
-        margin-bottom: 4rem;
-    }
-    
-    
-    /* Reviews Section */
-    .reviews {
-        height: 80vh;
-        padding: 4rem 4rem;
-    }
-    .reviews-box {
+    .intro-box {
+        padding: 0;
         flex-direction: column;
     }
-    
-    .reviews-textbox {
-        flex-direction: row;
-    }
-    
-    .reviews-card {
-        width: 32rem;
-        margin: 0 2rem 12rem 2rem;
-    }
 
-    /* Web Section */
-    .web {
-        padding: 12rem 0rem;
-    }
-
-    /* Info Section */
-    .info {
-        padding: 12rem 0rem;
-    }
-
-    /* Custom Section */
-    .custom p {
-        padding: 0 4rem;
-    }
-
-    /* Portfolio Section */
-    .portfolio-item img {
-        width: 280px;
+    .intro-image img {
+        width: 700px;
         height: auto;
+        border-radius: 12px;
+        margin-bottom: 4rem;
+    }
+
+    .intro-text {
+        padding: 0;
+    }
+
+    .intro-text h2 {
+        font-size: 3.5rem;
+    }
+
+    /* Photos Section */
+    .photos {
+        padding: 12rem 4rem 0 4rem;
+    }
+
+    .photos h2 {
+        text-align: left;
+        margin-bottom: 4rem;
+        padding: 0rem;
+    }
+
+    .photos-item img {
+        height: 225px;
+    }
+
+    /* Group Section */
+    .group {
+        padding: 8rem 4rem 6rem 4rem;
+    }
+
+    .group h2 {
+        margin-bottom: 4rem;
+    }
+
+    .group-box {
+        flex-direction: column;
+    }
+
+    .group-main {
+        gap: 10px;
+    }
+
+    .group-main-image img {
+        width: 100%;
+        height: 160px;
+        border-radius: 12px;
+    }
+
+    .group-images {
+        margin-bottom: 4rem;
+    }
+
+    .group-item img {
+        border-radius: 12px;
+        height: 200px;
+        width: 95%;
+    }
+
+    /* Gallery Section */
+    .gallery {
+        padding: 12rem 4rem 0 4rem;
+    }
+
+    .gallery h2 {
+        margin-bottom: 4rem;
+        text-align: left;
+    }
+
+    /* Collections Section */
+    .collections{
+        padding: 12rem 4rem;
+    }
+
+    .collections h2 {
+        margin-bottom: 4rem;
+    }
+
+    .collections-main {
+        padding-right: 2rem;
+    }
+
+    .collections-main img {
+        object-fit: cover;
+    }
+
+    .collections-item img {
+        /* margin: .5rem; */
+        width: 90%;
+        min-height: 125px;
+    }
+
+    /* Process Section */
+    .process {
+        padding: 8rem 4rem;
+    }
+
+    .process-box {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .process-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .process-text {
+        padding: 0;
+    }
+
+    /* Process Section 2 */
+    .process2 {
+        padding: 0rem 4rem;
+    }
+    
+    .process2-box {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .process2-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .process2-text {
+        padding: 0;
+    }
+
+    /* About Section */
+    .about {
+        padding: 12rem 4rem;
+    }
+
+    .about-box {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .about-text {
+        padding: 0;
     }
 
     /* Footer Section */
@@ -1514,164 +1587,105 @@ body {
 /* Extra small devices (small tablets, ipad mini, 768px and down) */
 @media only screen and (max-width: 768px) {
     
+    /* Header Hero Images */
+    .header1 {
+        height: 50vh;
+    }
+
+    .header2 {
+        height: 50vh;
+    }
+
+    .header3 {
+        height: 50vh;
+    }
+
     /* Header Section */
     .header {
-        height: 60vh;
+        padding: 18rem 8rem 4rem 8rem;
     }
 
-    .header-box {
-        margin: 0 4rem;
+    .header-image img {
+        width: 300px;
+        padding-left: 4rem;
     }
 
-    /* Logos 1 Section */
-    .logos {
-        height: 45vh;
+    .header-button {
+        padding-bottom: 4rem;
     }
 
-    /* Process Section */
-    .process {
-        padding: 10rem 2rem;
+    .header-text h1 {
+        font-size: 4.5rem;
     }
 
-    /* Logos 2 Section */
-    .logos-2 {
-        height: 45vh;
-    }
-
-    /* Services Section */
-    .services {
-        height: 130vh;
-    }
-
-    /* Pricing Section */
-    .pricing {
-        padding: 10rem 4rem;
-    }
-
-    .pricing-card {
-        margin-bottom: 6rem;
-    }
-
-    .pricing-card:nth-child(5) {
-        margin-bottom: 0rem;
-    }
-
-    /* Fiverr Section */
-    .fiverr-item:nth-child(2) {
-        margin: 0rem 4rem 0rem 4rem;
-    }
-
-    /* Branding Section */
-    .branding {
-        padding: 10rem 4rem 0rem 4rem;
-    }
-    .branding-item img {
-        width: 200px;
+    /* Intro Section */
+    .intro-image img {
+        width: 650px;
         height: auto;
-    }
-
-    .branding-item:nth-child(7) {
+        border-radius: 12px;
         margin-bottom: 4rem;
     }
 
-    .branding-item:nth-child(8) {
-        margin-bottom: 4rem;
+    /* Photos Section */
+    .photos {
+        padding: 8rem 4rem 0rem 4rem;
     }
 
-    .branding h4 {
-        margin-bottom: 10rem;
+    .photos-item img {
+        height: 200px;
     }
 
-    /* Web Section */
-    .web {
-        padding: 10rem 0rem;
+    /* Group Section */
+    .group-main-image img {
+        width: 100%;
+        height: 150px;
+        border-radius: 12px;
     }
 
-    /* Info Section */
-    .info {
-        padding: 10rem 0rem;
-    }
 
-    /* Client Section */
-    .client {
-        padding: 10rem 4rem 8rem 4rem;
-    }
-
-    /* Custom Section */
-    .custom {
-        padding: 10rem 4rem;
-    }
-    .custom p {
-        padding: 0 4rem;
-    }
-
-    /* Reviews Section */
-    .reviews {
-        height: 100vh;
-        padding: 10rem 4rem;
-    }
-
-    .reviews-textbox {
-        margin-bottom: 3rem;
-    }
-
-    .reviews-card {
-        width: 28rem;
-        margin: 0 2rem 8rem 2rem;
-        box-shadow: 0 .5rem .5rem rgb(153 153 153 / 15%);
-    }
-
-    /* Portfolio Section */
-    .portfolio {
-        padding: 10rem 2rem;
-    }
-
-    .portfolio-item img {
-        width: 310px;
-        height: auto;
-    }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+    h2 {
+        font-size: 3.75rem;
+    }
+
+    /* Header Hero Images */
+    .header1 {
+        height: 40vh;
+    }
+
+    .header2 {
+        height: 40vh;
+    }
+
+    .header3 {
+        height: 40vh;
+    }
+
     /* Header Section */
     .header {
-        height: 90vh;
+        padding: 18rem 2rem 4rem 2rem;
     }
 
     .header-box {
-        margin: 0 2rem;
+        flex-direction: column;
     }
 
     .header-text h1 {
         font-size: 4rem;
         text-align: center;
-        margin-bottom: 3rem;
     }
 
     .header-text h4 {
         text-align: center;
+        margin-bottom: 0;
     }
 
     .header-image img {
-        width: 315px;
-    }
-
-    .header-item .input {
-        width: 30rem;
-        height: 5.5rem;
-        font-size: 1rem;
-    }
-
-    .header-item .btn-submit {
-        width: 12rem;
-        height: 5.5rem;
-        font-size: 1rem;
-    }
-
-    .nav {
-        background: var(--color-light-grey);
+        width: 250px;
     }
 
     .bar__nav-toggle i {
@@ -1680,18 +1694,7 @@ body {
 
     .nav__link {
         color: var(--color-black);
-        /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
-    }
-
-    .nav__link:nth-child(6) {
-        border-bottom: none;
-    }
-    
-    .nav .btn-purple {
-        margin: auto;
-        text-align: center;
-        margin-top: 2rem;
-        padding: 12.5px 20px;
+        border-bottom: 1px dotted var(--color-black);
     }
 
     .nav .btn-transparent {
@@ -1701,246 +1704,235 @@ body {
         padding: 12.5px 20px;
     }
 
-    /* Logos Section */
-    .logos {
-        height: 42vh;
+    /* Showcase Section */
+    .showcase {
+        padding: 8rem 2rem 4rem 2rem;
+    }
+
+    .showcase-card {
+        width: 100%;
+    }
+
+    .showcase-card:nth-child(2) {
+        margin: 8rem 0;
+    }
+
+    .showcase-image img {
+        height: 15rem;
+    }
+
+    .showcase-text {
+        padding: 4rem 3rem 5rem 3rem;
+    }
+
+    .showcase-text p {
+        text-align: center;
+    }
+
+    /* Intro Section */
+    .intro {
+        padding: 8rem 2rem 0rem 2rem;
+    }
+
+    .intro-box {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .intro-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .intro-text {
+        padding: 0;
+    }
+
+    .intro-text h2 {
+        font-size: 3.75rem;
+    }
+
+    .intro-text p {
+        margin-bottom: 4rem;
+    }
+
+    /* Photos Section */
+    .photos {
+        padding: 8rem 2rem 0 2rem;
+    }
+
+    .photos h2 {
+        text-align: left;
+        margin-bottom: 2rem;
+        padding: 0rem;
+    }
+
+    .photos-item {
+        flex: 1;
+        margin: .75rem .1rem;
+    }
+
+    .photos-item img {
+        width: 150px;
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    /* Group Section */
+    .group {
+        padding: 8rem 2rem 6rem 2rem;
+    }
+
+    .group h2 {
+        margin-bottom: 2rem;
+    }
+
+    .group-box {
+        flex-direction: column;
+    }
+
+    .group-main {
+        gap: 10px;
+    }
+
+    .group-main-image img {
+        width: 150px;
+        height: 150px;
+        border-radius: 12px;
+    }
+
+    .group-images {
+        margin-bottom: 4rem;
+    }
+
+    .group-item img {
+        border-radius: 12px;
+        height: 200px;
+        width: 95%;
+    }
+
+    /* Gallery Section */
+    .gallery {
+        padding: 12rem 2rem 0rem 2rem;
+    }
+
+    .gallery h2 {
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .gallery-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+    .gallery__img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .gallery__item:nth-child(9) {
+        display: none;
+    }
+
+    /* Collections Section */
+    .collections {
+        padding: 12rem 2rem 6rem 2rem;
+    }
+
+    .collections h2 {
+        margin-bottom: 2rem;
+    }
+
+    .collections-box {
+        flex-direction: column;
+    }
+
+    .collections-main {
+        gap: 10px;
+        padding-right: 0;
+    }
+
+    .collections-main img {
+        /* width: 150px; */
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+    }
+
+    .collections-images {
+        margin-bottom: 4rem;
+    }
+
+    .collections-item img {
+        border-radius: 12px;
+        height: 200px;
+        width: 95%;
     }
 
     /* Process Section */
     .process {
-        padding: 10rem 2rem;
-    }
-
-    .process h2 {
-        font-size: 4rem;
+        padding: 8rem 2rem;
     }
 
     .process-box {
         flex-direction: column;
+        padding: 0;
     }
 
-    .process-card {
-        width: 22rem;
-        margin-bottom: 6rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .process-card:nth-child(3) {
-        margin-bottom: 0rem;
-    }
-
-    /* Certifications Section */
-    .certifications {
-        padding: 4rem 2rem;
-    }
-
-    .certifications-box {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .certifications-item img {
-        width: 115px;
+    .process-image img {
+        width: 100%;
         height: auto;
-    }
-
-    .certifications-item:nth-child(1) {
         margin-bottom: 4rem;
     }
 
-    .certifications-item:nth-child(2) {
-        margin-bottom: 4rem;
-    }
-
-    /* Logos 2 Section */
-    .logos-2 {
-        height: 42vh;
-    }
-
-    /* Services Section */
-    .services {
-        height: auto;
-        padding: 10rem 2rem;
-    }
-
-    .services h2 {
-        font-size: 4.25rem;
-        margin-bottom: -2rem;
-    }
-
-    .services-box {
-        margin: 8rem 0 4rem 0;
-    }
-
-    /* Custom Section */
-    .custom {
-        padding: 10rem 4rem 6rem 4rem;
-    }
-
-    .custom h2 {
-        font-size: 4rem;
-        margin-bottom: 3rem;
-    }
-
-    .custom p {
+    .process-text {
         padding: 0;
     }
 
-    .custom-card:nth-child(3) {
-        margin-bottom: 6rem;
+    /* Process Section 2 */
+    .process2 {
+        padding: 0rem 2rem;
     }
-
-    /* Branding Section */
-    .branding {
-        padding: 10rem 4rem 8rem 4rem;
-    }
-
-    .branding h2 {
-        font-size: 4rem;
-    }
-
-    .branding h4 {
-        margin-bottom: 8rem;
-    }
-
-    .branding-item img {
-        width: 210px;
-        height: auto;
-    }
-
-    .branding-item:nth-child(7) {
-        margin-bottom: 0rem;
-    }
-
-    /* Pricing Section */
-    /* .pricing {
-        padding: 12rem -4rem;
-    } */
-
-    .pricing-card {
-        margin-bottom: 4rem;
-    }
-
-    .pricing-card:nth-child(5) {
-        margin-bottom: 0rem;
-    }
-
-    /* Fiverr Section */
-    .fiverr-item img {
-        width: 300px;
-    }
-
-    .fiverr-item:nth-child(2) {
-        margin: 0rem 4rem 0rem 4rem;
-    }
-
-    /* Web Section */
-    .web {
-        padding: 10rem 2rem;
-    }
-    .web-box {
-        padding: 0;
-    }
-
-    .web-box p {
-        padding: 0;
-    }
-
-    /* Info Section */
-    .info {
-        padding: 10rem 2rem;
-    }
-    .info-box {
-        padding: 0;
-    }
-
-    .info-box p {
-        padding: 0;
-    }
-
-    /* Client Section */
-    .client {
-        padding: 10rem 2rem 8rem 2rem;
-    }
-
-    .client h2 {
-        font-size: 4rem;
-        /* text-align: left; */
-    }
-
-    .client h4 {
-        /* text-align: left; */
-    }
-
-    .client-box {
-        margin: 0 0;
-        flex-wrap: wrap;
-    }
-
-    .client-item {
-        width: 13rem;
-        height: 13rem;
-        margin: 0 0rem 6rem 0rem;
-    }
-
-    .client-button {
-        padding: 2rem 0;
-    }
-
-    /* Portfolio Section */
-    .portfolio p {
-        padding-right: 0rem;
-    }
-
-    /* Reviews Section */
-    .reviews {
-        height: auto;
-        padding: 10rem 4rem 10rem 4rem;
-    }
-    .reviews-box {
+    
+    .process2-box {
         flex-direction: column;
+        padding: 0;
     }
 
-    .reviews-textbox {
+    .process2-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .process2-text {
+        padding: 0;
+    }
+
+    /* About Section */
+    .about {
+        padding: 8rem 2rem;
+    }
+
+    .about-box {
         flex-direction: column;
+        padding: 0;
     }
 
-    .reviews-card {
-        width: 28rem;
-        margin: 0 2rem 8rem 2rem;
-        box-shadow: 0 .5rem .5rem rgb(153 153 153 / 15%);
+    .about-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
     }
 
-    .reviews-box {
-        margin: 0 2rem;
-    }
-
-    .reviews-text h1 {
-        font-size: 4rem;
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    .reviews-text h4 {
-        text-align: center;
-    }
-
-    .reviews-image img {
-        width: 285px;
-    }
-
-    .reviews-item .input {
-        width: 30rem;
-        height: 5.5rem;
-        font-size: 1rem;
-    }
-
-    .reviews-item .btn-submit {
-        width: 12rem;
-        height: 5.5rem;
-        font-size: 1rem;
+    .about-text {
+        padding: 0;
     }
 
     /* Footer Section */
